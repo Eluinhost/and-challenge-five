@@ -1,0 +1,60 @@
+{
+  "name": "and-challenge-five",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "aframe": "1.0.4",
+    "aframe-fps-counter-component": "1.0.1",
+    "ramda": "0.27.1",
+    "react": "^0.0.0-experimental-94c0244ba",
+    "react-dom": "^0.0.0-experimental-94c0244ba",
+    "react-redux": "7.2.1",
+    "react-scripts": "3.4.3",
+    "redux": "4.0.5",
+    "redux-devtools-extension": "2.13.8",
+    "redux-saga": "1.1.3",
+    "reselect": "4.0.0",
+    "rxjs": "6.6.3",
+    "three": "0.120.1",
+    "typesafe-redux-helpers": "0.0.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prettier:check": "prettier --check \"**/*.{js,jsx,md}\" --config .prettierrc",
+    "prettier:write": "prettier --write \"**/*.{js,jsx,md}\" --config .prettierrc"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "husky": "4.3.0",
+    "lint-staged": "10.3.0",
+    "prettier": "2.1.1",
+    "react-app-rewired": "2.1.6",
+    "react-scripts": "3.4.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "yarn run lint && yarn prettier:check"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,css,md}": "prettier --write"
+  }
+}
