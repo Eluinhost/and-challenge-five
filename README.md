@@ -30,11 +30,11 @@ The default map is the one from the challenge, the RESET button generates a new 
 
 'Winning' the default map from the challenge
 
-[Winning Gif](./winning.gif)
+![Winning Gif](./winning.gif)
 
 'Losing' a random map
 
-[Losing gif](./losing.gif)
+![Losing gif](./losing.gif)
 
 ---
 
