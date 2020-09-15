@@ -1,13 +1,40 @@
 # AND Challenge 5
 
-Using A-Frame with an experimental version of React for async rendering + Redux for data management
+This is a WebVR/XR app available at https://eluinhost.github.io/and-challenge-five/
 
 Tested in Firefox with Valve Index + Controllers, as well as in Chrome with mouse + keyboard
 
-Chrome needed to be ran in non-sandboxed mode + beta to get VR working where the controller support was very broken. It
-does appear to have MUCH better performance, running at the full 144fps vs 60-80 in Firefox though :'(
+Chrome works fine in non-VR but needed to be ran in non-sandboxed mode + a beta version to get VR working where the
+controller support was very broken. It does appear to have MUCH better performance though, running at the full 144fps
+vs 60-80 in Firefox :'(
 
 Seems like a lot of things can/will be broken based on the browser's support for WebVR vs newer WebXR spec
+
+## 'Game' instructions
+
+This is a knockoff minesweeper clone built with A-Frame with an experimental version of React using some experimental
+APIs for VR support
+
+Flag all mines + check all tiles to unlock the exit, move the robot there to win. Walking over a mine will cause you to
+lose the game.
+
+The default map is the one from the challenge, the RESET button generates a new random sized map with a random number of mines (and possibly in a non-winning layout with mines blocking the exit 🤔)
+
+-   Can cycle flags on a tile with trigger/mouse click
+-   Can move robot with thumbstick/arrow keys
+-   Can check tile the robot is on with `A` button/space key
+-   `F` enters VR mode, `Esc` will quit out of it
+-   `W`,`S`,`A`,`D` + click and drag can move the camera in non-VR mode
+
+### Gifs
+
+'Winning' the default map from the challenge
+
+[Winning Gif](./winning.gif)
+
+'Losing' a random map
+
+[Losing gif](./losing.gif)
 
 ---
 
